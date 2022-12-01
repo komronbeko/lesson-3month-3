@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    container: {
+                        center: true,
+                        padding: {
+                            DEFAULT: '1rem',
+                            sm: '2rem',
+                            lg: '4rem',
+                            xl: '5rem',
+                            '2xl': '6rem',
+                        },
+                        screens: {
+                            xsm: "400px",
+                            sm: "600px",
+                            md: "850px",
+                            lg: "1050px",
+                            xl: "1300px",
+                            "2xl": "1600px"
+                        }
+
+                    },
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        xxl: "50px",
+                    },
+                    colors: {
+                        "bg-intro": "#F9FCFF",
+                        "body-intro": "#F5F5F5",
+                        mainColor: "#7872B9",
+                        contextColor: "#4D4D52",
+                    },
+
+                    screens: {
+                        "3xl": {
+                            max: "1440px"
+                        },
+                        "2xl": {
+                            max: "1130px"
+                        },
+                        xl: {
+                            max: "960px"
+                        },
+                        lg: {
+                            max: "768px"
+                        },
+                        md: {
+                            max: "560px"
+                        },
+                        sm: {
+                            max: "440px"
+                        },
+                        xsm: {
+                            max: "370px"
+                        }
+                    },
+                    fontSize: {
+                        "h-size": "40px",
+
+                    },
+                    lineHeight: {
+                        "h-height": "52px"
+                    }
+                },
+            },
+        };
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body class="font-montserrat font-medium text-mainColor">
+    <header class="bg-bg-intro">
+        <nav class="flex items-center justify-between container pt-20 font-semibold">
+            <img src="./images/logo youmi 2.svg" alt="logo">
+            <ul class="flex gap-x-16 text-contextColor">
+                <li><a href="./index.html">О нас</a></li>
+                <li><a href="./index.html">Тарифы</a></li>
+                <li><a href="./index.html">Психологам</a></li>
+                <li><a href="./index.html">Материалы</a></li>
+            </ul>
+            <div class="rounded-xl inline-block border-2 border-solid border-mainColor  py-3.5 px-12">
+                <a class="text-mainColor" href="./index.html">Личный кабинет</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bg-bg-intro">
+            <div class="container flex py-28">
+                <div>
+                    <h2 class="font-extrabold text-h-size leading-h-height">Выберите количество сессий, которое вы
+                        хотите оплатить.</h2>
+                    <p class="text-2xl my-5 text-contextColor">Оплачивая пакет от 4 сессий вы получаете доступ к
+                        приложению.</p>
+                    <div class="rounded-2xl bg-mainColor py-6 px-20 inline-block mt-12">
+                        <a href="./index.html" class="text-white">Узнать больше</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/intro-img (2).png" alt="intro-img">
+                </div>
+            </div>
+        </section>
+        <section class="py-28">
+            <div class="container flex flex-col items-center">
+                <div>
+                    <h2 class="font-extrabold text-h-size leading-h-height mb-20">Тарифы</h2>
+                </div>
+                <div class="grid grid-cols-4 gap-x-5 gap-y-10">
+                    <div class="bg-bg-intro rounded-2xl w-64 h-96">
+                        <div class="bg-slate-200 px-8 py-4 rounded-t-2xl">
+                            <p class="flex flex-col items-center content-center">1 сесия</p>
+                        </div>
+                        <div class="flex flex-col items-center content-center mt-5 mb-8">
+                            <div class="mb-6 flex flex-col items-center content-center">
+                                <h4>2 900₽</h4>
+                                <span>за сессию</span>
+                            </div>
+                            <div class="w-56 h-20 rounded-xl bg-mainColor mb-5 flex justify-center">
+                                <a href="./index.html" class="text-white mt-6">Оплатить 2 900₽</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-bg-intro rounded-2xl w-64 h-96">
+                        <div class="bg-slate-200 px-8 py-4 rounded-t-2xl">
+                            <p class="flex flex-col items-center content-center">1 сесия</p>
+                        </div>
+                        <div class="flex flex-col items-center content-center mt-5 mb-8">
+                            <div class="mb-6 flex flex-col items-center content-center">
+                                <h4>2 900₽</h4>
+                                <span>за сессию</span>
+                            </div>
+                            <div class="w-56 h-20 rounded-xl bg-mainColor mb-5 flex justify-center">
+                                <a href="./index.html" class="text-white mt-6">Оплатить 2 900₽</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-bg-intro rounded-2xl w-64 h-96">
+                        <div class="bg-slate-200 px-8 py-4 rounded-t-2xl">
+                            <p class="flex flex-col items-center content-center">1 сесия</p>
+                        </div>
+                        <div class="flex flex-col items-center content-center mt-5 mb-8">
+                            <div class="mb-6 flex flex-col items-center content-center">
+                                <h4>2 900₽</h4>
+                                <span>за сессию</span>
+                            </div>
+                            <div class="w-56 h-20 rounded-xl bg-mainColor mb-5 flex justify-center">
+                                <a href="./index.html" class="text-white mt-6">Оплатить 2 900₽</a>
+                            </div>
+                            <div class="w-56 h-12 rounded-lg bg-red-100 mb-5 flex justify-center">
+                                <p class="mt-2.5">В рассрочку</p>
+                            </div>
+                            <div>
+                                <p>выгода 11 200₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-bg-intro rounded-2xl w-64 h-96">
+                        <div class="bg-slate-200 px-8 py-4 rounded-t-2xl">
+                            <p class="flex flex-col items-center content-center">1 сесия</p>
+                        </div>
+                        <div class="flex flex-col items-center content-center mt-5 mb-8">
+                            <div class="mb-6 flex flex-col items-center content-center">
+                                <h4>2 900₽</h4>
+                                <span>за сессию</span>
+                            </div>
+                            <div class="w-56 h-20 rounded-xl bg-mainColor mb-5 flex justify-center">
+                                <a href="./index.html" class="text-white mt-6">Оплатить 2 900₽</a>
+                            </div>
+                            <div class="w-56 h-12 rounded-lg bg-red-100 mb-5 flex justify-center">
+                                <p class="mt-2.5">В рассрочку</p>
+                            </div>
+                            <div>
+                                <p>выгода 11 200₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-bg-intro rounded-2xl w-64 h-96">
+                        <div class="bg-slate-200 px-8 py-4 rounded-t-2xl">
+                            <p class="flex flex-col items-center content-center">1 сесия</p>
+                        </div>
+                        <div class="flex flex-col items-center content-center mt-5 mb-8">
+                            <div class="mb-6 flex flex-col items-center content-center">
+                                <h4>2 900₽</h4>
+                                <span>за сессию</span>
+                            </div>
+                            <div class="w-56 h-20 rounded-xl bg-mainColor mb-5 flex justify-center">
+                                <a href="./index.html" class="text-white mt-6">Оплатить 2 900₽</a>
+                            </div>
+                            <div class="w-56 h-12 rounded-lg bg-red-100 mb-5 flex justify-center">
+                                <p class="mt-2.5">В рассрочку</p>
+                            </div>
+                            <div>
+                                <p>выгода 11 200₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-bg-intro rounded-2xl w-64 h-96">
+                        <div class="bg-slate-200 px-8 py-4 rounded-t-2xl">
+                            <p class="flex flex-col items-center content-center">1 сесия</p>
+                        </div>
+                        <div class="flex flex-col items-center content-center mt-5 mb-8">
+                            <div class="mb-6 flex flex-col items-center content-center">
+                                <h4>2 900₽</h4>
+                                <span>за сессию</span>
+                            </div>
+                            <div class="w-56 h-20 rounded-xl bg-mainColor mb-5 flex justify-center">
+                                <a href="./index.html" class="text-white mt-6">Оплатить 2 900₽</a>
+                            </div>
+                            <div class="w-56 h-12 rounded-lg bg-red-100 mb-5 flex justify-center">
+                                <p class="mt-2.5">В рассрочку</p>
+                            </div>
+                            <div>
+                                <p>выгода 11 200₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-bg-intro rounded-2xl w-64 h-96">
+                        <div class="bg-slate-200 px-8 py-4 rounded-t-2xl">
+                            <p class="flex flex-col items-center content-center">1 сесия</p>
+                        </div>
+                        <div class="flex flex-col items-center content-center mt-5 mb-8">
+                            <div class="mb-6 flex flex-col items-center content-center">
+                                <h4>2 900₽</h4>
+                                <span>за сессию</span>
+                            </div>
+                            <div class="w-56 h-20 rounded-xl bg-mainColor mb-5 flex justify-center">
+                                <a href="./index.html" class="text-white mt-6">Оплатить 2 900₽</a>
+                            </div>
+                            <div class="w-56 h-12 rounded-lg bg-red-100 mb-5 flex justify-center">
+                                <p class="mt-2.5">В рассрочку</p>
+                            </div>
+                            <div>
+                                <p>выгода 11 200₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-bg-intro rounded-2xl w-64 h-96">
+                        <div class="bg-slate-200 px-8 py-4 rounded-t-2xl">
+                            <p class="flex flex-col items-center content-center">1 сесия</p>
+                        </div>
+                        <div class="flex flex-col items-center content-center mt-5 mb-8">
+                            <div class="mb-6 flex flex-col items-center content-center">
+                                <h4>2 900₽</h4>
+                                <span>за сессию</span>
+                            </div>
+                            <div class="w-56 h-20 rounded-xl bg-mainColor mb-5 flex justify-center">
+                                <a href="./index.html" class="text-white mt-6">Оплатить 2 900₽</a>
+                            </div>
+                            <div class="w-56 h-12 rounded-lg bg-red-100 mb-5 flex justify-center">
+                                <p class="mt-2.5">В рассрочку</p>
+                            </div>
+                            <div>
+                                <p>выгода 11 200₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-20">
+                    <form action="./index.html" class="flex flex-col">
+                        <input class="px-8 py-5 rounded-xl inline-block border-2 border-solid border-mainColor"
+                            type="text" placeholder="Введите промокод">
+                        <input class="rounded-2xl bg-mainColor py-6 px-20 inline-block mt-9 text-white" type="submit"
+                            placeholder="Отправить">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="py-28 bg-bg-intro">
+            <div class="container flex justify-between items-start">
+                <div>
+                    <div>
+                        <h2 class="font-extrabold text-h-size leading-h-height mb-5">
+                            Оплачивая пакет от 4 сессий
+                        </h2>
+                        <p class="text-contextColor text-xl font-semibold w-1/2">мы дарим доступ к приложению
+                            с виртуальным психологом.</p>
+                    </div>
+                    <div class="mt-9">
+                        <ul class="text-contextColor flex flex-col gap-11 w-3/5">
+                            <li class="flex gap-8">
+                                <img src="./images/check.svg" alt="check">
+                                <p class="text-lg">Прорабатывайте себя с помощью упражнений и аудиопрактик</p>
+                            </li>
+                            <li class="flex gap-8">
+                                <img src="./images/check.svg" alt="check">
+                                <p class="text-lg">Ведите личный дневник настроения и получайте подробную статистику
+                                    о себе</p>
+                            </li>
+                            <li class="flex gap-8">
+                                <img src="./images/check.svg" alt="check">
+                                <p class="text-lg"> Расскажите виртуальному психологу о своих чувствах и он подберет
+                                    актуальный материал</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl bg-mainColor py-6 px-20 inline-block mt-16">
+                        <a href="./index.html" class="text-white">Доступно в App Store</a>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <img src="./images/screen 1.png" alt="screen">
+                    <img class="mt-24 -ml-10" src="./images/screen 2.png" alt="screen">
+                </div>
+            </div>
+        </section>
+        <section class="py-28">
+            <div class="container">
+                <div class="p-20 bg-bg-intro flex relative">
+                    <div>
+                        <div class="mb-5">
+                            <h4 class="text-contextColor text-2xl font-semibold mb-2.5">Реферальная программа</h4>
+                            <h2 class="font-extrabold text-h-size leading-h-height">Позаботьтесь о других</h2>
+                        </div>
+                        <div class="text-contextColor w-1/2">
+                            <p>С помощью реферальной программы вы можете приглашать своих друзей по вашей индивидуальной
+                                ссылке и получать 500 рублей за каждого, кто пройдет первую сессию. </p>
+                            <p class="mt-5">
+                                Деньги поступают на ваш баланс, с которого вы можете оплачивать сесии.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-20 right-0">
+                        <img src="./images/illusr ref prog 1.png" alt="">
+                    </div>
+                </div>
+                <div class="mt-28">
+                    <div class="flex justify-center mb-28">
+                        <h2 class="font-extrabold text-h-size leading-h-height">Как происходит программа</h2>
+                    </div>
+                    <div class="flex gap-3 text-contextColor">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="relative">
+                                <img src="./images/Vector (1).png" alt="round">
+                                <img class="absolute -top-6 left-9" src="./images/Vector (2).png" alt="one">
+                            </div>
+                            <div class="w-2/3 mt-4">
+                                <p>Копируете и отправляете личную реферальную ссылку</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/noun-arrow-2840943 1.png" alt="next">
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <div class="relative">
+                                <img src="./images/Vector (1).png" alt="round">
+                                <img class="absolute -top-6 left-4" src="./images/2.png" alt="one">
+                            </div>
+                            <div class="w-4/5 mt-4">
+                                <p>Ваш друг переходит и регистируется по ней</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/noun-arrow-2840943 5.png" alt="next">
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <div class="relative">
+                                <img src="./images/Vector (1).png" alt="round">
+                                <img class="absolute -top-6 left-4" src="./images/3.png" alt="one">
+                            </div>
+                            <div class="w-2/3 mt-4">
+                                <p>Проходит первую сессию, вы получаете бонус на баланс</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-bg-intro py-20">
+        <div class="container flex justify-between">
+            <div>
+                <div class="mb-9">
+                    <img src="./images/logo youmi 2.svg" alt="logo">
+                </div>
+                <div class="flex gap-8">
+                    <img src="./images/vk.svg" alt="vk">
+                    <img src="./images/telegram.svg" alt="telegram">
+                    <img src="./images/dzen.svg" alt="dzen">
+                </div>
+            </div>
+            <div>
+                <p class="text-contextColor mb-1.5">Сотрудничество</p>
+                <span class="text-lg">@youmiwork</span>
+                <p class="text-contextColor mb-1.5 mt-5">Поддержка клиентов</p>
+                <span class="text-lg">@youmiwork</span>
+            </div>
+            <div class="flex flex-col gap-6">
+                <a href="./index.html">О нас</a>
+                <a href="./index.html">Тарифы</a>
+                <a href="./index.html">Психологам</a>
+            </div>
+            <div class="flex flex-col gap-6">
+                <a href="./index.html">Блог</a>
+                <a href="./index.html">Вопрос - ответ</a>
+                <a href="./index.html">Контакты</a>
+            </div>
+            <div class="flex flex-col gap-5 text-contextColor">
+                <a href="./index.html">Обработка персональных данных</a>
+                <a href="./index.html">Пользовательское соглашение</a>
+                <a href="./index.html">Юридические документы</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
